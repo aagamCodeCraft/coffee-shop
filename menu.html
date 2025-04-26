@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Coffee Haven</title>
+    <meta name="description" content="Explore our menu of premium coffee drinks, pastries, and more at Coffee Haven.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Backup styles in case external CSS fails to load */
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .menu-item {
+            width: 280px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .menu-item-image {
+            height: 200px;
+            overflow: hidden;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .menu-category {
+            margin-bottom: 40px;
+        }
+        .page-header {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none; color: inherit;">
+                <img src="images/logo.jpg" alt="Coffee Haven Logo">
+                <h1>Coffee Haven</h1>
+            </a>
+        </div>
+        <nav id="main-nav">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Our Menu</h1>
+        <p>Crafted with love and the finest ingredients</p>
+    </div>
+
+    <div class="content">
+        <section class="section menu-page">
+            <div class="menu-category">
+                <h2>Coffee Classics</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/espresso.webp" alt="Espresso" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Espresso'">
+                        </div>
+                        <h3>Espresso</h3>
+                        <p class="description">Rich and bold, the perfect pick-me-up.</p>
+                        <p class="price">₹249</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/cappuccino.jpg" alt="Cappuccino" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Cappuccino'">
+                        </div>
+                        <h3>Cappuccino</h3>
+                        <p class="description">Perfect balance of espresso, steamed milk, and foam.</p>
+                        <p class="price">₹229</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/latte.jpg" alt="Latte" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Latte'">
+                        </div>
+                        <h3>Latte</h3>
+                        <p class="description">Creamy and smooth, with a touch of sweetness.</p>
+                        <p class="price">₹199</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/mocha.jpg" alt="Mocha" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Mocha'">
+                        </div>
+                        <h3>Mocha</h3>
+                        <p class="description">Chocolatey indulgence with a coffee kick.</p>
+                        <p class="price">₹249</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>Cold Beverages</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Cold Brew.jpg" alt="Cold Brew" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Cold+Brew'">
+                        </div>
+                        <h3>Cold Brew</h3>
+                        <p class="description">Slow-steeped for a refreshing, smooth taste.</p>
+                        <p class="price">₹259</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/iced-latte.webp" alt="Iced Latte" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Iced+Latte'">
+                        </div>
+                        <h3>Iced Latte</h3>
+                        <p class="description">Our classic latte served over ice for a refreshing twist.</p>
+                        <p class="price">₹199</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Iced-Mocha.webp" alt="Iced Mocha" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Iced+Mocha'">
+                        </div>
+                        <h3>Iced Mocha</h3>
+                        <p class="description">A delightful chocolate and coffee combination served cold.</p>
+                        <p class="price">₹299</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/caramel-frappucchino.jpg" alt="Caramel Frappe" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Caramel+Frappe'">
+                        </div>
+                        <h3>Caramel Frappe</h3>
+                        <p class="description">Blended coffee with caramel, topped with whipped cream.</p>
+                        <p class="price">₹319</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h2>Treats & Pastries</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Croissant.jpg" alt="Butter Croissant" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Croissant'">
+                        </div>
+                        <h3>Butter Croissant</h3>
+                        <p class="description">Flaky, buttery pastry, freshly baked each morning.</p>
+                        <p class="price">₹119</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/Blueberry Muffin.jpeg" alt="Blueberry Muffin" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Muffin'">
+                        </div>
+                        <h3>Blueberry Muffin</h3>
+                        <p class="description">Moist muffin bursting with fresh blueberries.</p>
+                        <p class="price">₹149</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/NY Cheesecake.jpeg" alt="NY Cheesecake" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Cheesecake'">
+                        </div>
+                        <h3>NY Cheesecake</h3>
+                        <p class="description">Rich and creamy classic New York style cheesecake.</p>
+                        <p class="price">₹129</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="images/chocolate-chip-cookie.jpg" alt="Chocolate Chip Cookies" onerror="this.src='https://via.placeholder.com/300x200/6f4e37/ffffff?text=Cookies'">
+                        </div>
+                        <h3>Chocolate Chip Cookies</h3>
+                        <p class="description">Freshly baked cookies with premium chocolate chunks.</p>
+                        <p class="price">₹199</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Host Your Event at Coffee Haven</h2>
+            <p>Our space is available for private events, meetings, and celebrations.</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.jpg" alt="Coffee Haven Logo" onerror="this.src='https://via.placeholder.com/50x50/6f4e37/ffffff?text=Logo'">
+                <h3>Coffee Haven</h3>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
+                <p>Saturday - Sunday: 8:00 AM - 9:00 PM</p>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates and special offers</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn btn-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart"></i> by Aagam</p>
+        </div>
+    </footer>
+
+    <!-- Script to handle missing images -->
+    <script>
+        // Handle missing images
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Menu page loaded, checking images...");
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
